@@ -31,14 +31,3 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
-- task: NexusIqPipelineTask@1
-  inputs:
-    nexusIqService: 'NexusIQConnection'
-    organizationId: 'webgoat'
-    applicationId: 'webgoat'
-    stage: 'Build'
-    scanPipelineWorkspace: true
-    ignoreSystemError: true
-    ignoreScanningError: true
-    enableDebugLogging: true
